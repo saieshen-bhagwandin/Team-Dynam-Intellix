@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*Screen Sizes*/
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+	z-index:-1;
+}
+
+/*Flex Boxes */
+.flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: aqua;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 8vw;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: gray;
+  }
+
+
+  /*Search*/
+  .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+  /*Pagination*/
+  .center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+/*Search box*/
+.search input[type=text]{
+  width:250px;
+  height:40px;
+  border-radius:13px;
+  border-color: black;
+  font-size: 16px;
+  margin-top : 60px;
+
+}
+
+.search{
+  float:right;
+  margin:7px; 
+
+}
+
+.search button{
+  height: 50;
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 12px 16px;
+  margin-right: 18px;
+  font-size: 12px;
+  border: none;
+  border-radius: 13px;
+  margin-top : 55px;
+
+
+}
+
+table {
+ 
+  margin: -10px;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0 01px;
+ }
+ 
+ 
+ .header_fixed thead th {
+  top: 0;
+  background-color: #ffffff;
+  color: black;
+ }
+ 
+ th,
+ td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  text-align: justify;
+  
+ }
+ 
+ tr:nth-child(even) {
+  background-color: #ffffff;
+ }
+ 
+ tr:nth-child(odd) {
+  background-color: #ffffff;
+ }
+ 
+ tr:hover td {
+  cursor: pointer;
+  background-color: #ffffff;
+ }
+ 

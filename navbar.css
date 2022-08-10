@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+body {
+
+  background-color:#E6E9EE ;
+}
+
+a {
+	
+  text-decoration: none;
+  
+}
+
+ul {
+	
+  list-style-type: none;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E6E9EE;
+  align-items: center;
+  padding: 2rem 0rem;
+  height: 14vh;
+}
+
+header .logo {
+  font-size: 2rem;
+  margin: 0rem 1.5rem;
+}
+
+ul {
+	 
+  display: flex;
+  justify-content: space-evenly;
+   
+
+}
+
+ul li {
+	
+  margin-right: 1rem;
+  ;
+}
+
+ul li a {
+  font-size: 18px;
+  padding: 8px 10px;
+  display: block;
+  color:  #18114a;
+  border-radius:15px;
+  background-color: #E6E9EE;
+  text-align: center;
+  margin-top:13px;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #E6E9EE;
+  color: #2bb3e2;
+  font-weight: bolder;
+  transition: 0.5s;
+  border-radius: 13px;
+
+}
+
+nav ul li a.active{
+    border-radius: none;
+    border-bottom: 3px solid skyblue; 
+}
+
+
+.hamburger {
+  position: absolute;
+  right: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display: none;
+  position: absolute;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+
+.logout{
+	
+	color :  #0d4a78;
+	
+	
+}
+
+.logout:hover{
+	background: #E6E9EE;
+		color :  #2bb3e2;
+
+	
+	
+}
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background-position: cover;
+  }
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    
+  }
+
+  ul {
+	   background-color: #E6E9EE;
+    flex-direction: column;
+    position: absolute;
+    top: 14vh;
+    right: -100%;
+    height: 86vh;
+    width: 100%;
+    align-items: center;
+    transition: right 0.3s ease-in;
+  }
+
+  ul li {
+    margin-right: 0px;
+	 
+  }
+
+  .menu-slide {
+    right: 0%;
+    transition: right 0.3s ease-in;
+  }
+
+  .cross .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .cross .bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+  .cross .bar:last-child {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
